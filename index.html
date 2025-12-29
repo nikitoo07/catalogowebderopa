@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>NOIR & BLANC - Catálogo de Moda Premium | Estilo Exclusivo</title>
+    <meta name="description"
+        content="Descubre nuestra colección exclusiva de moda premium. Chaquetas de cuero, abrigos elegantes, zapatillas de diseño y más. Compra fácil por WhatsApp o Instagram.">
+    <meta name="keywords" content="moda premium, ropa exclusiva, catálogo online, moda negra y blanca, estilo urbano">
+    <meta name="author" content="NOIR & BLANC">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="NOIR & BLANC - Catálogo de Moda Premium">
+    <meta property="og:description" content="Estilo que habla por ti. Descubre nuestra colección exclusiva.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#hero" class="logo">NOIR & BLANC</a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#hero" class="nav-link">Inicio</a>
+            <a href="#products" class="nav-link">Productos</a>
+            <a href="#footer" class="nav-link">Contacto</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+                ☰
+            </button>
+            <button class="cart-button" id="cart-btn" aria-label="Abrir carrito de compras">
+                🛍️ Carrito
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">ESTILO QUE HABLA POR TI</h1>
+            <p class="hero-subtitle">Descubre la elegancia atemporal en cada pieza de nuestra colección exclusiva</p>
+            <a href="#products" class="hero-cta">Explorar Colección</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="products-header">
+            <h2 class="section-title" id="section-title">Colección Hombres</h2>
+            <button class="category-toggle" id="category-toggle">
+                Ver Colección Mujeres
+            </button>
+        </div>
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </section>
+
+
+    <!-- Cart Modal -->
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3 class="cart-title">Tu Carrito</h3>
+                <button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button>
+            </div>
+
+            <div class="cart-items" id="cart-items">
+                <p class="cart-empty">Tu carrito está vacío</p>
+            </div>
+
+            <div class="cart-footer" id="cart-footer" style="display: none;">
+                <div class="cart-total">
+                    Total: <span id="cart-total">$0</span>
+                </div>
+                <div class="checkout-buttons">
+                    <button class="checkout-btn whatsapp-btn" id="whatsapp-checkout">
+                        📱 Pagar por WhatsApp
+                    </button>
+                    <button class="checkout-btn instagram-btn" id="instagram-checkout">
+                        📸 Pagar por Instagram
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">¿Tienes Dudas?</h3>
+            <p class="footer-text">
+                Contáctanos directamente para consultas, pedidos personalizados o cualquier pregunta sobre nuestros
+                productos.
+            </p>
+
+            <div class="footer-social">
+                <a href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer"
+                    class="social-btn whatsapp" aria-label="Contactar por WhatsApp">
+                    📱 WhatsApp
+                </a>
+                <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer"
+                    class="social-btn instagram" aria-label="Contactar por Instagram">
+                    📸 Instagram
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                &copy; 2025 NOIR & BLANC. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
