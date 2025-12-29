@@ -407,9 +407,8 @@ function handleWhatsAppCheckout() {
 function handleInstagramCheckout() {
     if (cart.length === 0) return;
 
-    // Reemplaza con tu usuario de Instagram
-    const instagramUsername = 'nikoo.dev';
-    const instagramURL = `https://instagram.com/${nikoo.dev}`;
+    // Abrir la página principal de Instagram
+    const instagramURL = 'https://www.instagram.com/';
 
     // Show alert with order details
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
@@ -573,4 +572,3 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
-
